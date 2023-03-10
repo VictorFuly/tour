@@ -2,15 +2,24 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
+
+  //Rotas filhas 
+  
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'footer',
     pathMatch: 'full'
   },
+  {
+    path: 'footer',
+    loadChildren: () => import('./componentes/footer/footer.module').then(m => m.FooterModule )
+  },
+  {
+    path: 'form/:id',
+    loadChildren: () => import('./page/form/form.module').then( m => m.FormPageModule)
+  },
+
+ 
 ];
 
 @NgModule({

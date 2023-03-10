@@ -1,0 +1,21 @@
+
+
+{
+    "lista": [
+        {
+            "id": 1,
+            "produto": "arroz",
+            "quantidade": "5kg",
+            "status": false
+
+        },
+
+        {
+            "id" : 2,
+            "produto":"Feijao",
+            "quantidade":"1kg",
+            "status":false
+
+        }
+    ]
+}
